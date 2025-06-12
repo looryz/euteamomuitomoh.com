@@ -1,2 +1,207 @@
 # euteamomuitomoh.com
 feito pra nicole
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Uma declaração de amor especial para Nicole no Dia dos Namorados.">
+  <title>Feliz Dia dos Namorados, Nicole!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset de estilos */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Corpo da página */
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #ffd1dc, #ffe6f0);
+      color: #800040;
+      overflow-x: hidden;
+      position: relative;
+      padding-bottom: 50px;
+    }
+
+    /* Cabeçalho */
+    header {
+      background-color: #ffccdd;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.5em;
+      color: #b3005e;
+      animation: fadeIn 2s ease-out;
+    }
+
+    /* Container principal */
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px 20px;
+      background-color: #fff0f8;
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.1);
+      position: relative;
+      z-index: 2;
+      animation: slideUp 1s ease-out;
+    }
+
+    /* Imagem */
+    .image-container img {
+      max-width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      animation: fadeInImage 2s ease-out;
+    }
+
+    /* Efeito de coração pulsante */
+    .heart {
+      font-size: 4em;
+      animation: pulse 1.5s infinite;
+      margin: 30px 0 10px;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    /* Mensagem */
+    .message {
+      font-size: 1.3em;
+      line-height: 1.8;
+      margin-top: 20px;
+      animation: fadeInText 2s ease-out;
+    }
+
+    /* Rodapé */
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #ffccdd;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    /* Botão extra */
+    .btn-extra {
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #ff6699;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background 0.3s;
+    }
+
+    .btn-extra:hover {
+      background-color: #e05588;
+    }
+
+    #extra-message {
+      display: none;
+      margin-top: 20px;
+      font-style: italic;
+      color: #b3005e;
+      transition: opacity 0.5s;
+    }
+
+    /* Animações */
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes fadeInImage {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInText {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      0% { transform: translateY(20px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    /* Pétalas flutuantes */
+    .floating-heart {
+      position: absolute;
+      color: rgba(255, 105, 180, 0.2);
+      font-size: 2em;
+      animation: float 6s infinite;
+      pointer-events: none;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(100vh) translateX(0); opacity: 0; }
+      50% { opacity: 1; }
+      100% { transform: translateY(-100vh) translateX(50px); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Pétalas flutuantes -->
+  <div class="floating-heart" style="left: 10%; animation-delay: 1s;">💖</div>
+  <div class="floating-heart" style="left: 30%; animation-delay: 2s;">💕</div>
+  <div class="floating-heart" style="left: 50%; animation-delay: 3s;">💘</div>
+  <div class="floating-heart" style="left: 70%; animation-delay: 4s;">💝</div>
+  <div class="floating-heart" style="left: 90%; animation-delay: 5s;">❤️</div>
+
+  <!-- Música de fundo -->
+  <audio id="romanticMusic" autoplay loop>
+    <source src="musica-romantica.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+  </audio>
+
+  <header>
+    <h1>Feliz Dia dos Namorados, Nicole 💖</h1>
+  </header>
+
+  <div class="container">
+    <div class="image-container">
+      
+    </div>
+
+    <div class="heart">❤️</div>
+
+    <div class="message">
+      <p>Hoje é o nosso dia, um momento especial para celebrar algo precioso: <strong>o nosso amor</strong>.</p>
+      <p>Nicole, você ilumina meus dias com o seu sorriso, aquece meu coração com seu carinho e transforma minha vida em algo melhor todos os dias.</p>
+      <p>Obrigado por ser minha companheira, minha amiga, meu amor. Que este seja apenas mais um capítulo lindo na nossa história.</p>
+      <p>Te amo imensamente, com todo meu coração. 💘</p>
+    </div>
+
+    <button class="btn-extra" onclick="showExtra()">Clique aqui para mais carinho 💌</button>
+    <div id="extra-message">Prometo te fazer sorrir todos os dias da nossa vida. Sempre seu, com amor eterno. 💗</div>
+  </div>
+
+  <footer>
+    <p>Com amor,</p>
+    <p><strong>Fellype — seu eterno namorado 💌</strong></p>
+  </footer>
+
+  <script>
+    function showExtra() {
+      const msg = document.getElementById("extra-message");
+      msg.style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
